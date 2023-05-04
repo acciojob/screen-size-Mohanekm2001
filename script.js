@@ -1,16 +1,13 @@
-//your JS code here. If required.
-
-
-
-function size(){
-   const width = window.innerWidth;
-const height = window.innerHeight;
-const sizeInfoDiv = document.getElementById("sizeInfo");
-
-const sizeInfoH1 = document.createElement("h1");
-sizeInfoH1.innerText = `Width: ${width} and Height: ${height}`;
-
-sizeInfoDiv.appendChild(sizeInfoH1);
-}
-
-window.addEventListener("resize",size);
+window.addEventListener('resize', function() {
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    let sizeInfo = document.querySelector('#sizeInfo');
+    sizeInfo.innerHTML = '<h1>Width: ' + width + 'px' + ' Height: ' + height + 'px</h1>';
+});
+document.addEventListener('DOMContentLoaded', function() {
+    // Your code here
+	 let width = window.innerWidth;
+    let height = window.innerHeight;
+    let sizeInfo = document.querySelector('#sizeInfo');
+    sizeInfo.innerHTML = '<h1>Width: ' + width + 'px' + ' Height: ' + height + 'px</h1>';
+});
